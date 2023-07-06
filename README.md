@@ -119,7 +119,7 @@ The commands you can choose from are:
     command is “3”.
 
 4.  **Show Active Tasks** – This command shows the tasks that are
-    finished from our list. The digit which represents the functionality
+    unfinished from our list. The digit which represents the functionality
     of this command is “4”.
 
 5.  **Show Deleted Tasks** – This command shows the tasks that are
