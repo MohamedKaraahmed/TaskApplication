@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Welcome to the Task Manager project! This console application provides various functionalities to manage your tasks efficiently. Below are the available commands along with their corresponding digits:
+Welcome to the Task Manager project! This console application empowers users with various functionalities to efficiently manage tasks. Below are the key commands and their corresponding digits:
 
 1. **Add Task:** Add a new task to the list. Checks for existing tasks with the same title.
 
