@@ -1,140 +1,69 @@
-# TaskApplication
- Simple Console Application
+# Task Manager Console Application
 
-Welcome to our “Task application”!
+**Important Note:** Please read this README before using the console application.
 
-Before you start using our app, you need to go through a few easy steps
-to prepare the environment which our application needs:
+## Project Overview
 
-1.  Open this link: <https://www.h2database.com/html/main.html> and
-    click on the “Windows Installer” icon which is surrounded by green
-    (for Windows and other icon for All Platforms).
+Welcome to the Task Manager project! This console application provides various functionalities to manage your tasks efficiently. Below are the available commands along with their corresponding digits:
 
-<img src="media/image1.png" style="width:6.53193in;height:4.05833in" />
+1. **Add Task:** Add a new task to the list. Checks for existing tasks with the same title.
 
-This will start downloading the Installer:
+2. **Edit Task:** Edit the title and description of an existing task from the active task list.
 
-<img src="media/image2.png" style="width:6.53194in;height:3.67431in" />
+3. **Remove Task:** Remove an existing task from the list.
 
-2.  Once the download is completed, you have to run the Installer:
+4. **Show Active Tasks:** Display the unfinished tasks from the list.
 
-> <img src="media/image3.png" style="width:6.53194in;height:3.67431in" />
+5. **Show Deleted Tasks:** Display the tasks that have been deleted from the list.
 
-You can easily install it by press “Next” button and then “Install”
+6. **Extract Active Tasks To A File:** Save all active tasks to a file.
 
-3.  After you successfully installed H2 Database Engine you can
+7. **Extract Deleted Tasks To A File:** Save all deleted tasks to a file.
 
-Start it by open the H2 Database Engine icon from you applications menu:
+8. **Exit:** Stop the console application.
 
-<img src="media/image4.png" style="width:6.025in;height:3.38914in" />
+## Functionality Details
 
-4-When you start the H2Console(Command Line) you will be redirected to
-the login form of the Database we use, while you see this black window
-that means the H2 DB Engine is running and is ready to connect:
+- **Add Task:**
+  - Checks for existing tasks with the same title before adding to the list.
 
-<img src="media/image5.png" style="width:6.53194in;height:3.67431in" />
+- **Edit Task:**
+  - Edits the title and description of an existing task from the active task list.
 
-And then you just press “Connect” button without enter neither username
-or password.
+- **Remove Task:**
+  - Removes an existing task from the list.
 
-4.  There you go, that is our database which we use, there you can see
-    the TASKS table, where we store our data:
+- **Show Active Tasks:**
+  - Displays the tasks that are unfinished from the list.
 
-<img src="media/image6.png" style="width:6.53194in;height:3.67431in" />
+- **Show Deleted Tasks:**
+  - Displays the tasks that have been deleted from the list.
 
-One very specific thing to work with this H2 DB Engine is that you can’t
-run the H2 DB Engine at the same time when you are running the code for
-the application in IntelliJ or other compiler. So before you start the
-code from the compiler you need to CLOSE the H2 Console.
+- **Extract Active Tasks To A File:**
+  - Saves all active tasks to a file.
 
-And then you can start the application from a compiler. And also if you
-want to connect to H2 DB Engine while you compiler is running you will
-have a problem, because the both things can’t work at the same time!
+- **Extract Deleted Tasks To A File:**
+  - Saves all deleted tasks to a file.
 
-So REMEMBER:
+- **Exit:**
+  - Stops the console application.
 
--   When you want to start the code with a compiler ->You have to Close
-    the H2 Console !
+## Additional Features
 
--   When you want to connect with H2 DB Engine from the Browser -> You
-    have to Stop the compilation running from your compiler and Open the
-    H2 Console icon.
+- **Unit Tests:**
+  - The application includes comprehensive unit tests to ensure functionality and reliability.
 
-> I will show it with examples bellow:
+- **Task History:**
+  - The application keeps a history of tasks, allowing extraction of both deleted and active tasks to separate files.
 
--When you try to start the code with a compiler while H2 Console is
-running -> you get this error:
+## Data Storage
 
-<img src="media/image7.png" style="width:6.53194in;height:3.67431in" />
+- The application uses the H2 Database Engine for data storing.
+- JDBC is utilized for data querying.
 
-Solution: close the H2 Console app
+## Usage
 
-<img src="media/image8.png" style="width:6.53194in;height:3.67431in" />
+- Execute the corresponding digit for the desired functionality to interact with the Task Manager.
+- Ensure to use the "Exit" command to stop the console application gracefully.
 
-If you try to open the H2 Console while your compiler is running the
-code you will get this error and the solution is quite simple -> just
-stop your compiler and then open the H2 Console and Connect to the
-Database!
-
-<img src="media/image9.png" style="width:6.53194in;height:3.67431in" />
-
-When you stop the compiler running you can enter again in the database!
-
-That’s the look when you connect successfully to the Database
-
-Initially the table will be empty
-
-<img src="media/image10.png" style="width:6.53194in;height:3.67431in" />
-
-Finally you know what are the specific things with our application and
-now you can explore it by yourself.
-
-**Short Intro:**
-
-To use our application, you have to choose from the **digits,** which
-are showed in the console, in front of every command. This **digit holds
-the functionality of the commands** and will avoid you from that, to
-write commands by yourself, so you just need to choose any of the digits
-in front of the showed commands.
-
--After each of the commands we have selected, we receive an appropriate
-message whether it was executed successfully or not
-
-The commands you can choose from are:
-
-1.  **Add Task** - This command checks if the task we want to add
-    already exists in our task list, and if there is no task with the
-    same title as the task we want to add to our list, it adds it to the
-    list. The digit which represents the functionality of this command
-    is “1”.
-
-2.  **Edit Task** – This command checks if the task we want to edit
-    exists in our list with active tasks and if such a task exists, edit
-    it’s title and description. The digit which represents the
-    functionality of this command is “2”.
-
-3.  **Remove Task** – This command checks if the task we want to remove
-    exists in our list with tasks and if such a task exists, removes it
-    from the list. The digit which represents the functionality of this
-    command is “3”.
-
-4.  **Show Active Tasks** – This command shows the tasks that are
-    unfinished from our list. The digit which represents the functionality
-    of this command is “4”.
-
-5.  **Show Deleted Tasks** – This command shows the tasks that are
-    deleted from our list. The digit which represents the functionality
-    of this command is “5”.
-
-6.  **Extract Active Tasks To A File –** This command extracts the all
-    active tasks in a file. The digit which represents the functionality
-    of this command is “6”.
-
-7.  **Extract Deleted Tasks To A File-** This command extracts all the
-    deleted tasks in a file. The digit which represents the
-    functionality of this command is “7”.
-
-8.  **Exit –** This command stops the application. The digit which
-    represents the functionality of this command is “8”.
-
-**The rest is in your hands, so, Happy Exploring.**
+**Note:** Happy task managing in this console application! 😊
