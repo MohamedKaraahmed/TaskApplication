@@ -1,6 +1,4 @@
-# Task Manager Console Application
-
-**Important Note:** Please read this README before using the console application.
+# Task Manager Application
 
 ## Project Overview
 
@@ -66,4 +64,4 @@ Welcome to the Task Manager project! This console application provides various f
 - Execute the corresponding digit for the desired functionality to interact with the Task Manager.
 - Ensure to use the "Exit" command to stop the console application gracefully.
 
-**Note:** Happy task managing in this console application! 😊
+**Note:** Happy task managing! 😊
